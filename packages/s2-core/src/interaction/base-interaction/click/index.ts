@@ -3,3 +3,4 @@ export { MergedCellClick } from './merged-cell-click';
 export { RowColumnClick } from './row-column-click';
 export { RowTextClick } from './row-text-click';
 export { CornerCellClick } from './corner-cell-click';
+export { ColumnTextClick } from './column-text-click';

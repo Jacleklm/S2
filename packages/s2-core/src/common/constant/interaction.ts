@@ -4,6 +4,7 @@ export enum InteractionName {
   MERGED_CELLS_CLICK = 'mergedCellsClick',
   ROW_COLUMN_CLICK = 'rowColumnClick',
   ROW_TEXT_CLICK = 'rowTextClick',
+  COLUMN_CELL_CLICK = 'columnCellClick',
   HOVER = 'hover',
   DATA_CELL_BRUSH_SELECTION = 'dataCellBrushSelection',
   ROW_CELL_BRUSH_SELECTION = 'rowCellBrushSelection',

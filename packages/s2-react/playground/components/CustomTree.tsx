@@ -40,6 +40,7 @@ export const CustomTreeOptions: SheetComponentOptions = {
       withHeader: true,
       withFormat: true,
     },
+    linkFields: ['sub_type', 'measure-a'],
   },
   // cornerText: '指标',
 };
@@ -60,6 +61,7 @@ export const CustomTree = React.forwardRef<SpreadSheet, CustomTreeProps>(
         options={{ ...CustomTreeOptions, hierarchyType }}
         ref={ref}
         onCopied={logHandler('onCopied')}
+        onLinkFieldJump={() => window.open('https://s2.antv.antgroup.com/')}
         header={{
           title: '自定义目录树',
           export: {

@@ -50,6 +50,7 @@ import {
   MergedCellClick,
   RowColumnClick,
   RowTextClick,
+  ColumnTextClick,
 } from './base-interaction/click';
 import { CornerCellClick } from './base-interaction/click/corner-cell-click';
 import { HoverEvent } from './base-interaction/hover';
@@ -414,6 +415,11 @@ export class RootInteraction {
         key: InteractionName.ROW_COLUMN_CLICK,
         interaction: RowColumnClick,
       },
+      {
+        key: InteractionName.COLUMN_CELL_CLICK,
+        interaction: ColumnTextClick,
+      },
+
       {
         key: InteractionName.ROW_TEXT_CLICK,
         interaction: RowTextClick,

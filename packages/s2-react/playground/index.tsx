@@ -399,7 +399,9 @@ function MainLayout() {
         <div className="playground">
           <LinkGroup />
           <Tabs
-            defaultActiveKey={localStorage.getItem('debugTabKey') || 'basic'}
+            defaultActiveKey={
+              localStorage.getItem('debugTabKey') || 'customTree'
+            }
             type="card"
             destroyInactiveTabPane
             items={[

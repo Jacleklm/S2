@@ -64,6 +64,11 @@ export class ColCell extends HeaderCell<ColHeaderConfig> {
     this.update();
   }
 
+  public drawTextShape() {
+    super.drawTextShape();
+    this.drawLinkField(this.meta);
+  }
+
   protected getFormattedFieldValue(): FormatResult {
     const { extra, value, field } = this.meta;
     const { fields } = this.spreadsheet.dataSet;
